@@ -3,7 +3,7 @@ import os
 import subprocess
 
 try:
-    cmd = "git log -1 --pretty='%cd' --date=format:'%Y-%m-%d-%H:%M:%S%z'"
+    cmd = "git log -1 --pretty=%cd --date=format:%Y-%m-%d-%H:%M:%S%z"
     # str_info_git = subprocess.check_output(['git', 'log', '-1', "--pretty='format:\%cd'", "--date=format:'\%Y-\%m-\%d \%H:\%M:\%S'"]).strip()
     str_info_git = subprocess.check_output(cmd.split()).strip().decode('utf-8')
     cmd = 'git diff --name-only'
