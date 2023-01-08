@@ -10,7 +10,7 @@ void setup() {
 }
 
 void loop() {
-  Serial.print("info: ");
+  Serial.print("STR_INFO_GIT: ");
   Serial.println(STR_INFO_GIT);
   Serial.println(millis());
   delay(1000);
