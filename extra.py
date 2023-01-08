@@ -14,7 +14,7 @@ try:
         str_info_git = str_info_git + '-modified'
     print(str_info_git)
     # print(str_info_git.decode('utf-8'))
-    projenv.AppendUnique(CPPDEFINES=[("STR_INFO_GIT", env.StringifyMacro(str_info_git))])
+    projenv.Append(CPPDEFINES=[("STR_INFO_GIT", env.StringifyMacro(str_info_git))])
 except Exception as e:
     print("cannot assign str")
     print(e)
